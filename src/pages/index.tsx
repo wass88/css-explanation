@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { AnimationDelay } from "./_contents/animation-delay";
 import { AnimationComposition } from "./_contents/animation-composition";
+import { AnimationDirection } from "./_contents/animation-direction";
+import { BackgroundAttachment } from "./_contents/background-attachment";
 
 export default function Home() {
   return (
@@ -16,6 +18,9 @@ export default function Home() {
         <h2>Animations</h2>
         <AnimationComposition></AnimationComposition>
         <AnimationDelay></AnimationDelay>
+        <AnimationDirection></AnimationDirection>
+        <h2>Backgrounds and Borders</h2>
+        <BackgroundAttachment></BackgroundAttachment>
       </div>
     </>
   );

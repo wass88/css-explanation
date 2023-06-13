@@ -11,9 +11,11 @@
 }
 h1 {
   font-size: 2rem;
+  margin-block-start: 1rem;
 }
 h2 {
   font-size: 1.5rem;
+  margin-block-start: 1rem;
 }
 h3 {
   display: flex;
@@ -22,6 +24,7 @@ h3 {
 h3 .css-name {
   display: inline-block;
   font-weight: bolder;
+  margin-block-start: 1rem;
 }
 h3 .css-name::before {
   content: "{ ";
@@ -42,6 +45,7 @@ b {
 }
 .demo-box {
   padding: 1rem;
+  min-width: 0;
 }
 textarea {
   width: 100%;
