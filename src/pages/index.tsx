@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { AnimationDelay } from "./_contents/animation-delay";
+import { AnimationComposition } from "./_contents/animation-composition";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div id="container">
         <h1>CSS Explanation</h1>
         <h2>Animations</h2>
+        <AnimationComposition></AnimationComposition>
         <AnimationDelay></AnimationDelay>
       </div>
     </>

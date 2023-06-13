@@ -21,20 +21,24 @@ h3 {
 }
 h3 .css-name {
   display: inline-block;
+  font-weight: bolder;
 }
 h3 .css-name::before {
-  content: "[ ";
+  content: "{ ";
 }
 h3 .css-name::after {
-  content: " ]";
+  content: " }";
 }
 h3 .css-desc {
   display: inline-block;
   margin-right: 0;
 }
+b {
+  font-weight: bolder;
+}
 .demo {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 .demo-box {
   padding: 1rem;

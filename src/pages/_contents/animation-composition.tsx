@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { TextArea } from "../_component/textarea";
 import root from "react-shadow";
 
-export function AnimationDelay({}) {
+export function AnimationComposition({}) {
   const [anime, setAnime] = useState("anime");
   const restart = () => {
     setAnime("");
@@ -13,14 +13,19 @@ export function AnimationDelay({}) {
     });
   };
   const [styles, setStyles] = useState(
-    `.box1 { animation-delay: 0s; }
-.box2 { animation-delay: 1s; }
-.box3 { animation-delay: -1s; }`
+    `.box1 { animation-composition: replace; }
+.box2 { animation-composition: accumulate; }
+.box3 { animation-composition: add; }
+.box { transform: rotate(45deg); }
+@keyframes move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(10rem); }
+}`
   );
   return (
     <>
       <h3>
-        <span className="css-name">animation-delay: Time</span>
+        <span className="css-name">animation-composition: Type</span>
         <span className="css-desc">non-cascade</span>
       </h3>
       <div className="demo">
@@ -28,8 +33,11 @@ export function AnimationDelay({}) {
           <div className="css-values">
             <ul>
               <li>
-                <b>Time</b> アニメーションを遅らせる時間 (initial=0s)
+                <b>Type</b> 属性の合成方法 (initial=replace)
               </li>
+              <li>replace 属性を置き換えてアニメーションする</li>
+              <li>accumulate 属性に加えてアニメーションする</li>
+              <li>add 属性を合成してアニメーションする</li>
             </ul>
           </div>
           <TextArea
@@ -44,6 +52,7 @@ export function AnimationDelay({}) {
           <div className={`box box1 ${anime}`}></div>
           <div className={`box box2 ${anime}`}></div>
           <div className={`box box3 ${anime}`}></div>
+
           <style>{`
             :where(.box) {
               border: 2px solid black;
@@ -55,14 +64,6 @@ export function AnimationDelay({}) {
             }
             .box + .box {
               margin-top: 1rem;
-            }
-            @keyframes move {
-              0% {
-                transform: translateX(0);
-              }
-              100% {
-                transform: translateX(10rem);
-              }
             }
             ${styles}
           `}</style>
