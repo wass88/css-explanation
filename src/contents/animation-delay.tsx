@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { TextArea } from "../_component/textarea";
+import { TextArea } from "../component/textarea";
 import root from "react-shadow";
 
 export function AnimationDelay({}) {

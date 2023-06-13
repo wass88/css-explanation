@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { AnimationDelay } from "./_contents/animation-delay";
-import { AnimationComposition } from "./_contents/animation-composition";
-import { AnimationDirection } from "./_contents/animation-direction";
-import { BackgroundAttachment } from "./_contents/background-attachment";
+import { AnimationDelay } from "../contents/animation-delay";
+import { AnimationComposition } from "../contents/animation-composition";
+import { AnimationDirection } from "../contents/animation-direction";
+import { BackgroundAttachment } from "../contents/background-attachment";
 
 export default function Home() {
   return (

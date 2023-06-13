@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
-import { TextArea } from "../_component/textarea";
+import { TextArea } from "../component/textarea";
 import root from "react-shadow";
 
-export function AnimationDirection({}) {
+export function AnimationComposition({}) {
   const [anime, setAnime] = useState("anime");
   const restart = () => {
     setAnime("");
@@ -13,15 +13,19 @@ export function AnimationDirection({}) {
     });
   };
   const [styles, setStyles] = useState(
-    `.box1 { animation-direction: normal; }
-.box2 { animation-direction: reverse; }
-.box3 { animation-direction: alternate; }
-.box4 { animation-direction: alternate-reverse; }`
+    `.box1 { animation-composition: replace; }
+.box2 { animation-composition: accumulate; }
+.box3 { animation-composition: add; }
+.box { transform: rotate(45deg); }
+@keyframes move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(10rem); }
+}`
   );
   return (
     <>
       <h3>
-        <span className="css-name">animation-direction: Type</span>
+        <span className="css-name">animation-composition: Type</span>
         <span className="css-desc">non-cascade</span>
       </h3>
       <div className="demo">
@@ -29,8 +33,11 @@ export function AnimationDirection({}) {
           <div className="css-values">
             <ul>
               <li>
-                <b>Type</b> アニメーションの向き (initial=normal)
+                <b>Type</b> 属性の合成方法 (initial=replace)
               </li>
+              <li>replace 属性を置き換えてアニメーションする</li>
+              <li>accumulate 属性に加えてアニメーションする</li>
+              <li>add 属性を合成してアニメーションする</li>
             </ul>
           </div>
           <TextArea
@@ -45,7 +52,7 @@ export function AnimationDirection({}) {
           <div className={`box box1 ${anime}`}></div>
           <div className={`box box2 ${anime}`}></div>
           <div className={`box box3 ${anime}`}></div>
-          <div className={`box box4 ${anime}`}></div>
+
           <style>{`
             :where(.box) {
               border: 2px solid black;
@@ -57,14 +64,6 @@ export function AnimationDirection({}) {
             }
             .box + .box {
               margin-top: 1rem;
-            }
-            @keyframes move {
-              0% {
-                transform: translateX(0);
-              }
-              100% {
-                transform: translateX(10rem);
-              }
             }
             ${styles}
           `}</style>
