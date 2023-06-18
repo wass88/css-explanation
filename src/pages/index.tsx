@@ -6,6 +6,7 @@ import { BackgroundAttachment } from "../contents/background-attachment";
 import { BoxSizing } from "@/contents/box-sizing";
 import { Margin } from "@/contents/margin";
 import { CustomProperty } from "@/contents/custom-property";
+import { ColorFunction } from "@/contents/color-function";
 
 export default function Home() {
   return (
@@ -31,6 +32,10 @@ export default function Home() {
         <Margin></Margin>
         <h2>カスタムプロパティ</h2>
         <CustomProperty></CustomProperty>
+        <h2>文字コード</h2>
+        <h2>色調整</h2>
+        <h2>色</h2>
+        <ColorFunction></ColorFunction>
       </div>
     </>
   );
