@@ -5,6 +5,7 @@ import { AnimationDirection } from "../contents/animation-direction";
 import { BackgroundAttachment } from "../contents/background-attachment";
 import { BoxSizing } from "@/contents/box-sizing";
 import { Margin } from "@/contents/margin";
+import { CustomProperty } from "@/contents/custom-property";
 
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
         <h2>ボックス配置</h2>
         <h2>ボックスモデル</h2>
         <Margin></Margin>
+        <h2>カスタムプロパティ</h2>
+        <CustomProperty></CustomProperty>
       </div>
     </>
   );

@@ -16,6 +16,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   margin-block-start: 1rem;
+  margin-inline-start: -2rem;
 }
 h3 {
   display: flex;
@@ -25,6 +26,7 @@ h3 .css-name {
   display: inline-block;
   font-weight: bolder;
   margin-block-start: 1rem;
+  margin-inline-start: -0.7rem;
 }
 h3 .css-name::before {
   content: "{ ";
