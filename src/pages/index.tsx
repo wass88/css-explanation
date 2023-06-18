@@ -4,6 +4,7 @@ import { AnimationComposition } from "../contents/animation-composition";
 import { AnimationDirection } from "../contents/animation-direction";
 import { BackgroundAttachment } from "../contents/background-attachment";
 import { BoxSizing } from "@/contents/box-sizing";
+import { Margin } from "@/contents/margin";
 
 export default function Home() {
   return (
@@ -20,11 +21,13 @@ export default function Home() {
         <AnimationComposition></AnimationComposition>
         <AnimationDelay></AnimationDelay>
         <AnimationDirection></AnimationDirection>
-        <h2>背景</h2>
+        <h2>背景と境界線</h2>
         <BackgroundAttachment></BackgroundAttachment>
-        <h2>境界線</h2>
         <h2>基本インターフェース</h2>
         <BoxSizing></BoxSizing>
+        <h2>ボックス配置</h2>
+        <h2>ボックスモデル</h2>
+        <Margin></Margin>
       </div>
     </>
   );

@@ -36,9 +36,6 @@ h3 .css-desc {
   display: inline-block;
   margin-right: 0;
 }
-b {
-  font-weight: bolder;
-}
 .demo {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -47,7 +44,15 @@ b {
   padding: 1rem;
   min-width: 0;
 }
+b {
+  font-weight: bolder;
+}
 textarea {
   width: 100%;
   font-family: 'Courier New', Courier, monospace;
+}
+a {
+}
+a:hover {
+  text-decoration: underline;
 }
