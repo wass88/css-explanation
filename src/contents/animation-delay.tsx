@@ -33,7 +33,7 @@ export function AnimationDelay({}) {
             </ul>
           </div>
           <TextArea
-            onInput={(e) => {
+            onInput={(e: any) => {
               setStyles(e.target.value);
               restart();
             }}

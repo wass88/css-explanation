@@ -3,6 +3,7 @@ import { AnimationDelay } from "../contents/animation-delay";
 import { AnimationComposition } from "../contents/animation-composition";
 import { AnimationDirection } from "../contents/animation-direction";
 import { BackgroundAttachment } from "../contents/background-attachment";
+import { BoxSizing } from "@/contents/box-sizing";
 
 export default function Home() {
   return (
@@ -15,12 +16,15 @@ export default function Home() {
       </Head>
       <div id="container">
         <h1>CSS Explanation</h1>
-        <h2>Animations</h2>
+        <h2>アニメーション</h2>
         <AnimationComposition></AnimationComposition>
         <AnimationDelay></AnimationDelay>
         <AnimationDirection></AnimationDirection>
-        <h2>Backgrounds and Borders</h2>
+        <h2>背景</h2>
         <BackgroundAttachment></BackgroundAttachment>
+        <h2>境界線</h2>
+        <h2>基本インターフェース</h2>
+        <BoxSizing></BoxSizing>
       </div>
     </>
   );
