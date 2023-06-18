@@ -7,6 +7,7 @@ import { BoxSizing } from "@/contents/box-sizing";
 import { Margin } from "@/contents/margin";
 import { CustomProperty } from "@/contents/custom-property";
 import { ColorFunction } from "@/contents/color-function";
+import { Orphans } from "@/contents/orphans";
 
 export default function Home() {
   return (
@@ -36,6 +37,40 @@ export default function Home() {
         <h2>色調整</h2>
         <h2>色</h2>
         <ColorFunction></ColorFunction>
+        <h2>合成とブレンド</h2>
+        <h2>条件ルール</h2>
+        <h2>封じ込め</h2>
+        <h2>カウンター</h2>
+        <h2>表示</h2>
+        <h2>フィルター</h2>
+        <h2>Flexレイアウト</h2>
+        <h2>フォント</h2>
+        <h2>分割された要素</h2>
+        <Orphans></Orphans>
+        <h2>要素生成</h2>
+        <h2>Gridレイアウト</h2>
+        <h2>画像</h2>
+        <h2>リスト</h2>
+        <h2>論理的プロパティ</h2>
+        <h2>マスク</h2>
+        <h2>メディアクエリ</h2>
+        <h2>その他</h2>
+        <h2>モーションパス</h2>
+        <h2>マルチカラムレイアウト</h2>
+        <h2>はみ出し</h2>
+        <h2>ページ</h2>
+        <h2>Positionedレイアウト</h2>
+        <h2>ルビレイアウト</h2>
+        <h2>スクロールスナップ</h2>
+        <h2>スクロールバー</h2>
+        <h2>図形</h2>
+        <h2>表</h2>
+        <h2>テキスト</h2>
+        <h2>テキスト装飾</h2>
+        <h2>変形</h2>
+        <h2>変化</h2>
+        <h2>書字モード</h2>
+        <h2>ビュー</h2>
       </div>
     </>
   );
