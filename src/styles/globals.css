@@ -12,12 +12,10 @@
 h1 {
   font-size: 2rem;
   margin-block-start: 1rem;
-  margin-inline-start: -2rem;
 }
 h2 {
   font-size: 1.5rem;
   margin-block-start: 2rem;
-  margin-inline-start: -2rem;
 }
 h3 {
   display: flex;
@@ -28,7 +26,7 @@ h3 .css-name {
   display: inline-block;
   font-weight: bolder;
   margin-block-start: 1rem;
-  margin-inline-start: -0.7rem;
+  margin-inline-start: 0.3rem;
 }
 h3 .css-name::before {
   content: "{ ";
@@ -44,7 +42,7 @@ h3 .css-topic {
   display: inline-block;
   font-weight: bolder;
   margin-block-start: 1rem;
-  margin-inline-start: -1.1rem;
+  margin-inline-start: 1.1rem;
 }
 h3 .css-topic::before {
   content: "§ ";
@@ -52,15 +50,13 @@ h3 .css-topic::before {
 .demo {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  padding-left: 1rem;
 }
 .demo-box {
   padding: 1rem;
   min-width: 0;
 }
 .demo-box.wide {
-  grid-column: 1/3;
-}
-.tips {
   grid-column: 1/3;
 }
 b {

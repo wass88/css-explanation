@@ -113,59 +113,65 @@ export function ColorFunction({}) {
             `}</style>
         </root.div>
         <div className="tips">
-          <div className="rgb">
-            <h4>RGB</h4>
-            <ColorCube
-              color={(x, y, z) => `rgb(${x * 100}% ${y * 100}% ${z * 100}%)`}
-            />
-          </div>
-          <div className="hsl">
-            <h4>HSL</h4>
-            <ColorCube
-              color={(x, y, z) => `hsl(${x}turn ${y * 100}% ${z * 100}%)`}
-            />
-          </div>
-          <div className="hwb">
-            <h4>HWB</h4>
-            <ColorCube
-              color={(x, y, z) => `hwb(${x}turn ${y * 100}% ${z * 100}%)`}
-            />
-          </div>
-          <div className="lab">
-            <h4>LAB</h4>
-            <ColorCube
-              color={(x, y, z) =>
-                `lab(${x * 100}% ${y * 250 - 125} ${z * 250 - 125})`
-              }
-            />
-          </div>
-          <div className="lch">
-            <h4>LCH</h4>
-            <ColorCube
-              color={(x, y, z) => `lch(${x * 100}% ${y * 150} ${z}turn)`}
-            />
-          </div>
-          <div className="oklab">
-            <h4>OKLAB</h4>
-            <ColorCube
-              color={(x, y, z) =>
-                `oklab(${x * 100}% ${y * 0.8 - 0.4} ${z * 0.8 - 0.4})`
-              }
-            />
-          </div>
-          <div className="oklch">
-            <h4>OKLCH</h4>
-            <ColorCube
-              color={(x, y, z) => `oklch(${x * 100}% ${y * 0.4} ${z}turn)`}
-            />
+          <div className="tips-container">
+            <div className="rgb">
+              <h4>RGB</h4>
+              <ColorCube
+                color={(x, y, z) => `rgb(${x * 100}% ${y * 100}% ${z * 100}%)`}
+              />
+            </div>
+            <div className="hsl">
+              <h4>HSL</h4>
+              <ColorCube
+                color={(x, y, z) => `hsl(${x}turn ${y * 100}% ${z * 100}%)`}
+              />
+            </div>
+            <div className="hwb">
+              <h4>HWB</h4>
+              <ColorCube
+                color={(x, y, z) => `hwb(${x}turn ${y * 100}% ${z * 100}%)`}
+              />
+            </div>
+            <div className="lab">
+              <h4>LAB</h4>
+              <ColorCube
+                color={(x, y, z) =>
+                  `lab(${x * 100}% ${y * 250 - 125} ${z * 250 - 125})`
+                }
+              />
+            </div>
+            <div className="lch">
+              <h4>LCH</h4>
+              <ColorCube
+                color={(x, y, z) => `lch(${x * 100}% ${y * 150} ${z}turn)`}
+              />
+            </div>
+            <div className="oklab">
+              <h4>OKLAB</h4>
+              <ColorCube
+                color={(x, y, z) =>
+                  `oklab(${x * 100}% ${y * 0.8 - 0.4} ${z * 0.8 - 0.4})`
+                }
+              />
+            </div>
+            <div className="oklch">
+              <h4>OKLCH</h4>
+              <ColorCube
+                color={(x, y, z) => `oklch(${x * 100}% ${y * 0.4} ${z}turn)`}
+              />
+            </div>
           </div>
           <style jsx>{`
             .tips {
+              grid-column: 1/3;
+            }
+            .tips-container {
               background: #eee;
-              padding: 1rem;
+              padding: 2rem 2rem;
               display: flex;
-              justify-content: space-around;
-              margin-inline: -10rem;
+              justify-content: center;
+              flex-wrap: wrap;
+              gap: 1rem;
             }
           `}</style>
         </div>
