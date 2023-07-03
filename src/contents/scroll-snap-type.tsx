@@ -45,28 +45,28 @@ export function ScrollSnapType({}) {
         <root.div className="demo-box">
           <div className="box box1">
             <div className="solid">
+              <div className="inner">↓</div>
               <div className="inner"></div>
               <div className="inner"></div>
+              <div className="inner">→</div>
+              <div className="inner">→</div>
+              <div className="inner">↓</div>
               <div className="inner"></div>
               <div className="inner"></div>
-              <div className="inner"></div>
-              <div className="inner"></div>
-              <div className="inner"></div>
-              <div className="inner"></div>
-              <div className="inner"></div>
+              <div className="inner">🎆</div>
             </div>
           </div>
           <div className="box box2">
             <div className="solid">
+              <div className="inner">→</div>
+              <div className="inner">↓</div>
               <div className="inner"></div>
               <div className="inner"></div>
+              <div className="inner">↓</div>
               <div className="inner"></div>
               <div className="inner"></div>
-              <div className="inner"></div>
-              <div className="inner"></div>
-              <div className="inner"></div>
-              <div className="inner"></div>
-              <div className="inner"></div>
+              <div className="inner">→</div>
+              <div className="inner">🍈</div>
             </div>
           </div>
           <style>{`
@@ -93,6 +93,13 @@ export function ScrollSnapType({}) {
                 box-sizing: border-box;
                 background: black;
                 scroll-snap-align: center;
+                text-align: center;
+                font-size: 2rem;
+                line-height: 5rem;
+                font-weight: bold;
+            }
+            .inner:hover {
+                color: white;
             }
             ${styles}
           `}</style>
