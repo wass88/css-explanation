@@ -9,6 +9,7 @@ import { CustomProperty } from "@/contents/custom-property";
 import { ColorFunction } from "@/contents/color-function";
 import { Orphans } from "@/contents/orphans";
 import { ScrollSnapType } from "@/contents/scroll-snap-type";
+import { RubyPosition } from "@/contents/ruby-position";
 
 export default function Home() {
   return (
@@ -62,6 +63,7 @@ export default function Home() {
         <h2>ページ</h2>
         <h2>Positionedレイアウト</h2>
         <h2>ルビレイアウト</h2>
+        <RubyPosition></RubyPosition>
         <h2>スクロールスナップ</h2>
         <ScrollSnapType></ScrollSnapType>
         <h2>スクロールバー</h2>
