@@ -10,6 +10,7 @@ import { ColorFunction } from "@/contents/color-function";
 import { Orphans } from "@/contents/orphans";
 import { ScrollSnapType } from "@/contents/scroll-snap-type";
 import { RubyPosition } from "@/contents/ruby-position";
+import { ShapeOutside } from "@/contents/shape-outside";
 
 export default function Home() {
   return (
@@ -68,6 +69,7 @@ export default function Home() {
         <ScrollSnapType></ScrollSnapType>
         <h2>スクロールバー</h2>
         <h2>図形</h2>
+        <ShapeOutside></ShapeOutside>
         <h2>表</h2>
         <h2>テキスト</h2>
         <h2>テキスト装飾</h2>
