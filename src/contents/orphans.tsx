@@ -6,7 +6,7 @@ const LoremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 
 export function Orphans({}) {
   const [styles, setStyles] = useState(
-    `.box1 { orphans: 2; }
+    `.box1 { orphans: 1; }
 .box2 { orphans: 3; }
 `
   );
