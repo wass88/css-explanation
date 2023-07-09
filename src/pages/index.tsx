@@ -11,6 +11,7 @@ import { Orphans } from "@/contents/orphans";
 import { ScrollSnapType } from "@/contents/scroll-snap-type";
 import { RubyPosition } from "@/contents/ruby-position";
 import { ShapeOutside } from "@/contents/shape-outside";
+import { LetterSpacing } from "@/contents/letter-spacing";
 
 export default function Home() {
   return (
@@ -72,6 +73,7 @@ export default function Home() {
         <ShapeOutside></ShapeOutside>
         <h2>表</h2>
         <h2>テキスト</h2>
+        <LetterSpacing></LetterSpacing>
         <h2>テキスト装飾</h2>
         <h2>変形</h2>
         <h2>変化</h2>
