@@ -47,6 +47,10 @@ h3 .css-topic {
 h3 .css-topic::before {
   content: "§ ";
 }
+h4 {
+  font-size: 1rem;
+  margin-block-start: 1rem;
+}
 .demo {
   display: grid;
   grid-template-columns: 2fr 1fr;

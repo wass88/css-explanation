@@ -12,6 +12,7 @@ import { ScrollSnapType } from "@/contents/scroll-snap-type";
 import { RubyPosition } from "@/contents/ruby-position";
 import { ShapeOutside } from "@/contents/shape-outside";
 import { LetterSpacing } from "@/contents/letter-spacing";
+import { FontPalette } from "@/contents/font-palette";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
         <h2>フィルター</h2>
         <h2>Flexレイアウト</h2>
         <h2>フォント</h2>
+        <FontPalette></FontPalette>
         <h2>分割された要素</h2>
         <Orphans></Orphans>
         <h2>要素生成</h2>
