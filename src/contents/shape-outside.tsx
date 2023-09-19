@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { Header } from "@/component/header";
 
 const LoremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam`;
 
@@ -20,16 +21,13 @@ export function ShapeOutside({}) {
   );
   return (
     <>
-      <h3>
-        <span className="css-name">shape-outside: Type</span>
-        <span className="css-desc">non-cascade</span>
-      </h3>
+      <Header name="shape-outside" value="形" desc="non-cascade"></Header>
       <div className="demo">
         <div>
           <div className="css-values">
             <ul>
               <li>
-                <b>Type</b> インライン要素が回り込む形 (initial=none)
+                <b>形</b> インライン要素が回り込む形 (initial=none)
               </li>
               <li>none なし</li>
               <li>

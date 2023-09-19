@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { Header } from "@/component/header";
 
 export function AnimationDirection({}) {
   const [anime, setAnime] = useState("anime");
@@ -20,10 +21,11 @@ export function AnimationDirection({}) {
   );
   return (
     <>
-      <h3>
-        <span className="css-name">animation-direction: Type</span>
-        <span className="css-desc">non-cascade</span>
-      </h3>
+      <Header
+        name="animation-direction"
+        value="時間"
+        desc="non-cascade"
+      ></Header>
       <div className="demo">
         <div>
           <div className="css-values">

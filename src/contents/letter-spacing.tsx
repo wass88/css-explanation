@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { Header } from "@/component/header";
 
 export function LetterSpacing({}) {
   const [styles, setStyles] = useState(
@@ -15,16 +16,13 @@ export function LetterSpacing({}) {
   );
   return (
     <>
-      <h3>
-        <span className="css-name">letter-spacing: Length</span>
-        <span className="css-desc">cascade</span>
-      </h3>
+      <Header name="letter-spacing" value="長さ" desc="cascade"></Header>
       <div className="demo">
         <div>
           <div className="css-values">
             <ul>
               <li>
-                <b>Length</b> 文字の間の隙間の大きさ (initial=normal)
+                <b>長さ</b> 文字の間の隙間の大きさ (initial=normal)
               </li>
               <li>normal: デフォルト</li>
             </ul>

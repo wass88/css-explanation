@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { Header } from "@/component/header";
 
 export function BackgroundAttachment({}) {
   const [styles, setStyles] = useState(
@@ -11,17 +12,21 @@ export function BackgroundAttachment({}) {
   );
   return (
     <>
-      <h3>
-        <span className="css-name">background-attachment: Type</span>
-        <span className="css-desc">non-cascade</span>
-      </h3>
+      <Header
+        name="background-attachment"
+        value="種類"
+        desc="non-cascade"
+      ></Header>
       <div className="demo">
         <div>
           <div className="css-values">
             <ul>
               <li>
-                <b>Type</b> 背景をスクロールに追従する (initial=scroll)
+                <b>種類</b>: 背景をスクロールに追従させるか (initial=scroll)
               </li>
+              <li>scroll: スクロールで動かない</li>
+              <li>local: スクロールで動く</li>
+              <li>fixed: 画面に固定される</li>
             </ul>
           </div>
           <TextArea

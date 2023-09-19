@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { TopicHeader } from "@/component/header";
 
 export function CustomProperty({}) {
   const [styles, setStyles] = useState(
@@ -10,16 +11,18 @@ export function CustomProperty({}) {
   );
   return (
     <>
-      <h3>
-        <span className="css-name">--名前: 任意</span>
-        <span className="css-desc">cascade</span>
-      </h3>
+      <TopicHeader
+        anchor="custom-property"
+        name="カスタムプロパティ"
+        desc="cascade"
+      />
       <div className="demo">
         <div>
           <div className="css-values">
             <ul>
+              <li>--プロパティ名: 任意</li>
               <li>
-                <b>任意</b> 継承される独自属性を定義
+                <b>任意</b>: カスケードされる独自属性を定義
               </li>
             </ul>
           </div>

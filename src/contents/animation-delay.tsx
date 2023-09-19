@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { Header } from "@/component/header";
 
 export function AnimationDelay({}) {
   const [anime, setAnime] = useState("anime");
@@ -19,16 +20,13 @@ export function AnimationDelay({}) {
   );
   return (
     <>
-      <h3>
-        <span className="css-name">animation-delay: Time</span>
-        <span className="css-desc">non-cascade</span>
-      </h3>
+      <Header name="animation-delay" value="時間" desc="non-cascade"></Header>
       <div className="demo">
         <div>
           <div className="css-values">
             <ul>
               <li>
-                <b>Time</b> アニメーションを遅らせる時間 (initial=0s)
+                <b>時間</b> アニメーションを遅らせる時間 (initial=0s)
               </li>
             </ul>
           </div>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { Header } from "@/component/header";
 
 export function FontPalette({}) {
   const [styles, setStyles] = useState(
@@ -15,10 +16,7 @@ export function FontPalette({}) {
   );
   return (
     <>
-      <h3>
-        <span className="css-name">font-palette: パレット</span>
-        <span className="css-desc">cascade</span>
-      </h3>
+      <Header name="font-palette" value="パレット" desc="cascade"></Header>
       <style>{paletteStyles}</style>
       <div className="demo">
         <div>

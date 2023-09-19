@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { Header } from "@/component/header";
 
 const LoremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed`;
 
@@ -12,16 +13,17 @@ export function ScrollSnapType({}) {
   );
   return (
     <>
-      <h3>
-        <span className="css-name">scroll-snap-type: Axis Type</span>
-        <span className="css-desc">non-cascade</span>
-      </h3>
+      <Header
+        name="scroll-snap-type"
+        value="軸 種類"
+        desc="non-cascade"
+      ></Header>
       <div className="demo">
         <div>
           <div className="css-values">
             <ul>
               <li>
-                <b>Axis</b>: スクロールスナップする軸 (initial=none)
+                <b>軸</b>: スクロールスナップする軸 (initial=none)
               </li>
               <li>x: 水平方向のみスナップ</li>
               <li>y: 垂直方向のみスナップ</li>

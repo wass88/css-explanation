@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { Header } from "@/component/header";
 
 export function Margin({}) {
   const [styles, setStyles] = useState(
@@ -11,20 +12,17 @@ export function Margin({}) {
   );
   return (
     <>
-      <h3>
-        <span className="css-name">margin: 同時余白指定</span>
-        <span className="css-desc">non-cascade</span>
-      </h3>
+      <Header name="margin" value="同次余白指定" desc="non-cascade"></Header>
       <div className="demo">
         <div>
           <div className="css-values">
             <ul>
-              <li>上　右　下　左</li>
-              <li>上下　左右</li>
-              <li>上　左右　下</li>
-              <li>上下左右</li>
-              <li>Length: 必要とする余白の大きさ (initial: 0)</li>
-              <li>Percentage: 包含に対する幅</li>
+              <li>4値: 上　右　下　左</li>
+              <li>3値: 上　左右　下</li>
+              <li>2値: 上下　左右</li>
+              <li>1値: 上下左右</li>
+              <li>長さ: 必要とする余白の大きさ (initial: 0)</li>
+              <li>パーセンテージ: 包含に対する幅</li>
               <li>
                 auto:{" "}
                 <a href="https://www.w3.org/TR/CSS22/visudet.html#the-width-property#Computing_widths_and_margins">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { Header } from "@/component/header";
 
 const LoremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed`;
 
@@ -12,16 +13,13 @@ export function Orphans({}) {
   );
   return (
     <>
-      <h3>
-        <span className="css-name">orphans: Number</span>
-        <span className="css-desc">non-cascade</span>
-      </h3>
+      <Header name="orphans" value="数" desc="non-cascade"></Header>
       <div className="demo">
         <div>
           <div className="css-values">
             <ul>
               <li>
-                <b>Number</b>: 要素分断時に前へ送る最小必要行数 (initial=2)
+                <b>数</b>: 要素分断時に前へ送る最小必要行数 (initial=2)
               </li>
             </ul>
           </div>

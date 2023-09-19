@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { Header } from "@/component/header";
 
 export function BoxSizing({}) {
   const [styles, setStyles] = useState(
@@ -10,10 +11,7 @@ export function BoxSizing({}) {
   );
   return (
     <>
-      <h3>
-        <span className="css-name">background-attachment: Type</span>
-        <span className="css-desc">non-cascade</span>
-      </h3>
+      <Header name="box-sizing" value="種類" desc="non-cascade"></Header>
       <div className="demo">
         <div>
           <div className="css-values">

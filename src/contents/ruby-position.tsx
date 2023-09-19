@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { Header } from "@/component/header";
 
 export function RubyPosition({}) {
   const [styles, setStyles] = useState(
@@ -10,8 +11,9 @@ export function RubyPosition({}) {
   );
   return (
     <>
+      <Header name="ruby-position" value="位置" desc="cascade"></Header>
       <h3>
-        <span className="css-name">ruby-position: Type</span>
+        <span className="css-name">ruby-position: 位置</span>
         <span className="css-desc">cascade</span>
       </h3>
       <div className="demo">
@@ -19,7 +21,7 @@ export function RubyPosition({}) {
           <div className="css-values">
             <ul>
               <li>
-                <b>Type</b>: ふりがなの場所 (initial=alternate)
+                <b>位置</b>: ふりがなの場所 (initial=alternate)
               </li>
               <li>over: ルビを上側に表示する。</li>
               <li>under: ルビを下側に表示する。</li>

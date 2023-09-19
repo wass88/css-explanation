@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { TopicHeader } from "@/component/header";
 
 function ColorCube({
   color,
@@ -63,10 +64,7 @@ export function ColorFunction({}) {
 
   return (
     <>
-      <h3>
-        <span className="css-topic">色</span>
-        <span className="css-desc">value</span>
-      </h3>
+      <TopicHeader anchor="color" name="色" desc="value"></TopicHeader>
       <div className="demo">
         <div>
           <div className="css-values">

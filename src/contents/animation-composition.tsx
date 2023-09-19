@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { TextArea } from "../component/textarea";
 import root from "react-shadow";
+import { Header } from "@/component/header";
 
 export function AnimationComposition({}) {
   const [anime, setAnime] = useState("anime");
@@ -24,10 +25,11 @@ export function AnimationComposition({}) {
   );
   return (
     <>
-      <h3>
-        <span className="css-name">animation-composition: Type</span>
-        <span className="css-desc">non-cascade</span>
-      </h3>
+      <Header
+        name="animation-composition"
+        value="合成方法"
+        desc="non-cascade"
+      ></Header>
       <div className="demo">
         <div>
           <div className="css-values">
