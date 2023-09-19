@@ -24,11 +24,9 @@ export function AnimationDelay({}) {
       <div className="demo">
         <div>
           <div className="css-values">
-            <ul>
-              <li>
-                <b>時間</b> アニメーションを遅らせる時間 (initial=0s)
-              </li>
-            </ul>
+            <p>
+              <b>時間</b> アニメーションを遅らせる時間 (初期値 0s)
+            </p>
           </div>
           <TextArea
             onInput={(e: any) => {

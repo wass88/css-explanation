@@ -19,12 +19,10 @@ export function CustomProperty({}) {
       <div className="demo">
         <div>
           <div className="css-values">
-            <ul>
-              <li>--プロパティ名: 任意</li>
-              <li>
-                <b>任意</b>: カスケードされる独自属性を定義
-              </li>
-            </ul>
+            <p>--プロパティ名: 任意</p>
+            <p>
+              <b>任意</b> カスケードされる独自属性を定義
+            </p>
           </div>
           <TextArea
             onInput={(e: any) => {

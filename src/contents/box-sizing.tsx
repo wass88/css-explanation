@@ -15,12 +15,12 @@ export function BoxSizing({}) {
       <div className="demo">
         <div>
           <div className="css-values">
+            <p>
+              <b>Type</b> 大きさ指定に境界線を含める
+            </p>
             <ul>
-              <li>
-                <b>Type</b> 大きさ指定に境界線を含める (initial=content-box)
-              </li>
-              <li>content-box: 大きさ指定に境界線を含める</li>
-              <li>border-box: 大きさ指定に境界線を含めない</li>
+              <li>content-box 大きさ指定に境界線を含める (初期値)</li>
+              <li>border-box 大きさ指定に境界線を含めない</li>
             </ul>
           </div>
           <TextArea

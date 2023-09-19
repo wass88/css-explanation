@@ -25,11 +25,11 @@ export function ShapeOutside({}) {
       <div className="demo">
         <div>
           <div className="css-values">
+            <p>
+              <b>形</b> インライン要素が回り込む形
+            </p>
             <ul>
-              <li>
-                <b>形</b> インライン要素が回り込む形 (initial=none)
-              </li>
-              <li>none なし</li>
+              <li>none なし (初期値)</li>
               <li>
                 &lt;shape-box&gt; margin-box, border-box, padding-box,
                 content-box

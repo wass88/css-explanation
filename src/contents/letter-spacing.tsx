@@ -20,11 +20,11 @@ export function LetterSpacing({}) {
       <div className="demo">
         <div>
           <div className="css-values">
+            <p>
+              <b>長さ</b> 文字の間の隙間の大きさ
+            </p>
             <ul>
-              <li>
-                <b>長さ</b> 文字の間の隙間の大きさ (initial=normal)
-              </li>
-              <li>normal: デフォルト</li>
+              <li>normal デフォルト (初期値)</li>
             </ul>
           </div>
           <TextArea

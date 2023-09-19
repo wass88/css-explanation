@@ -17,14 +17,14 @@ export function Margin({}) {
         <div>
           <div className="css-values">
             <ul>
-              <li>4値: 上　右　下　左</li>
-              <li>3値: 上　左右　下</li>
-              <li>2値: 上下　左右</li>
-              <li>1値: 上下左右</li>
-              <li>長さ: 必要とする余白の大きさ (initial: 0)</li>
-              <li>パーセンテージ: 包含に対する幅</li>
+              <li>4値 上　右　下　左</li>
+              <li>3値 上　左右　下</li>
+              <li>2値 上下　左右</li>
+              <li>1値 上下左右</li>
+              <li>長さ 必要とする余白の大きさ (初期値 0)</li>
+              <li>パーセンテージ 包含に対する幅</li>
               <li>
-                auto:{" "}
+                auto{" "}
                 <a href="https://www.w3.org/TR/CSS22/visudet.html#the-width-property#Computing_widths_and_margins">
                   均等に分配される
                 </a>

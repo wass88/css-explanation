@@ -21,20 +21,23 @@ export function ScrollSnapType({}) {
       <div className="demo">
         <div>
           <div className="css-values">
+            <p>
+              <b>軸</b> スクロールスナップする軸
+            </p>
             <ul>
-              <li>
-                <b>軸</b>: スクロールスナップする軸 (initial=none)
-              </li>
-              <li>x: 水平方向のみスナップ</li>
-              <li>y: 垂直方向のみスナップ</li>
-              <li>block: ブロック方向のみスナップ</li>
-              <li>inline: インライン方向のみスナップ</li>
-              <li>both: 両方向にスナップ</li>
-              <li>
-                <b>Type</b>: スクロールスナップの挙動
-              </li>
-              <li>mandatory: スナップ位置にスクロールする</li>
-              <li>proximity: スナップ位置に近い場合にスクロールする</li>
+              <li>none スナップなし</li>
+              <li>x 水平方向のみスナップ</li>
+              <li>y 垂直方向のみスナップ</li>
+              <li>block ブロック方向のみスナップ</li>
+              <li>inline インライン方向のみスナップ</li>
+              <li>both 両方向にスナップ</li>
+            </ul>
+            <p>
+              <b>種類</b> スクロールスナップの挙動
+            </p>
+            <ul>
+              <li>mandatory スナップ位置にスクロールする</li>
+              <li>proximity スナップ位置に近い場合にスクロールする</li>
             </ul>
           </div>
           <TextArea

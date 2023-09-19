@@ -33,11 +33,11 @@ export function AnimationComposition({}) {
       <div className="demo">
         <div>
           <div className="css-values">
+            <p>
+              <b>Type</b> 属性の合成方法
+            </p>
             <ul>
-              <li>
-                <b>Type</b> 属性の合成方法 (initial=replace)
-              </li>
-              <li>replace 属性を置き換えてアニメーションする</li>
+              <li>replace 属性を置き換えてアニメーションする (初期値)</li>
               <li>accumulate 属性に加えてアニメーションする</li>
               <li>add 属性を合成してアニメーションする</li>
             </ul>

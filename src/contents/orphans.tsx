@@ -17,11 +17,9 @@ export function Orphans({}) {
       <div className="demo">
         <div>
           <div className="css-values">
-            <ul>
-              <li>
-                <b>数</b>: 要素分断時に前へ送る最小必要行数 (initial=2)
-              </li>
-            </ul>
+            <p>
+              <b>数</b> 要素分断時に前へ送る最小必要行数 (初期値 2)
+            </p>
           </div>
           <TextArea
             onInput={(e: any) => {

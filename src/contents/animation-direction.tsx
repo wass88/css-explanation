@@ -23,16 +23,20 @@ export function AnimationDirection({}) {
     <>
       <Header
         name="animation-direction"
-        value="時間"
+        value="向き"
         desc="non-cascade"
       ></Header>
       <div className="demo">
         <div>
           <div className="css-values">
+            <span>
+              <b>向き</b> アニメーションの向き
+            </span>
             <ul>
-              <li>
-                <b>Type</b> アニメーションの向き (initial=normal)
-              </li>
+              <li>normal 通常 (初期値)</li>
+              <li>reverse 逆向き</li>
+              <li>alternate 交互に</li>
+              <li>alternate-reverse 交互に逆向き</li>
             </ul>
           </div>
           <TextArea

@@ -21,11 +21,11 @@ export function FontPalette({}) {
       <div className="demo">
         <div>
           <div className="css-values">
+            <p>
+              <b>パレット</b>: COLRv1フォントの色を指定
+            </p>
             <ul>
-              <li>
-                <b>パレット</b>: COLRv1フォントの色を指定 (initial=normal)
-              </li>
-              <li>normal: デフォルト</li>
+              <li>normal: デフォルト (初期値)</li>
             </ul>
           </div>
           <TextArea

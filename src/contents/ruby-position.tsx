@@ -12,20 +12,16 @@ export function RubyPosition({}) {
   return (
     <>
       <Header name="ruby-position" value="位置" desc="cascade"></Header>
-      <h3>
-        <span className="css-name">ruby-position: 位置</span>
-        <span className="css-desc">cascade</span>
-      </h3>
       <div className="demo">
         <div>
           <div className="css-values">
+            <p>
+              <b>位置</b>: ふりがなの場所
+            </p>
             <ul>
-              <li>
-                <b>位置</b>: ふりがなの場所 (initial=alternate)
-              </li>
               <li>over: ルビを上側に表示する。</li>
               <li>under: ルビを下側に表示する。</li>
-              <li>alternate: 上下交互に表示する。(未実装)</li>
+              <li>alternate: 上下交互に表示する。(未実装) (初期値)</li>
               <li>inter-character: ルビを文字の間に表示する。(未実装)</li>
             </ul>
           </div>

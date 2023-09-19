@@ -69,22 +69,21 @@ export function ColorFunction({}) {
         <div>
           <div className="css-values">
             <ul>
-              <li>色名: red, black...</li>
-              <li>transparent: 透明</li>
-              <li>currentcolor: colorプロパティ</li>
-              <li>Hex: #123456</li>
-              <li>RGB: rgb(赤 緑 青% or 0-255)</li>
-              <li>HSL: hsl(色相-deg 彩度% 明度% / 0.5)</li>
-              <li>HWB: hwb(色相-deg 白% 黒% / 0.5)</li>
-              <li>LAB: lab(H% 緑赤-125~125 青黄25~125 / 0.5)</li>
-              <li>LCH: lch(彩度% 色量0~150? 色相-deg / 0.5)</li>
-              <li>OKLAB: oklab(H% 緑赤-0.4~0.4 青黄-0.4~0.4 / 0.5)</li>
-              <li>OKLCH: oklch(彩度% 色量 色相-deg / 0.4)</li>
-              <li>color(色空間 値…) TODO</li>
-              <li>
-                color-mix(in 色空間 (shorter|longer hue), 色 割合%, 色 割合%)
-                TODO
-              </li>
+              <li>色名 red, black...</li>
+              <li>transparent 透明</li>
+              <li>currentcolor colorプロパティ</li>
+              <li>Hex値 #123456</li>
+              <li>rgb(赤 緑 青% or 0-255)</li>
+              <li>hsl(色相-deg 彩度% 明度% / 0.5)</li>
+              <li>hwb(色相-deg 白% 黒% / 0.5)</li>
+              <li>lab(H% 緑赤-125~125 青黄25~125 / 0.5)</li>
+              <li>lch(彩度% 色量0~150? 色相-deg / 0.5)</li>
+              <li>oklab(H% 緑赤-0.4~0.4 青黄-0.4~0.4 / 0.5)</li>
+              <li>oklch(彩度% 色量 色相-deg / 0.4)</li>
+              <li>その他の色空間 color(色空間 値…)</li>
+              <li>color-mix(in 色空間, 色 割合%, 色 割合%)</li>
+              <li>color-mix(in 色空間 shorter hue, 色 割合%, 色 割合%)</li>
+              <li>color-mix(in 色空間 longer hue, 色 割合%, 色 割合%)</li>
             </ul>
           </div>
           <TextArea

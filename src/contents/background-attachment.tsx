@@ -20,13 +20,13 @@ export function BackgroundAttachment({}) {
       <div className="demo">
         <div>
           <div className="css-values">
+            <p>
+              <b>種類</b> 背景をスクロールに追従させるか
+            </p>
             <ul>
-              <li>
-                <b>種類</b>: 背景をスクロールに追従させるか (initial=scroll)
-              </li>
-              <li>scroll: スクロールで動かない</li>
-              <li>local: スクロールで動く</li>
-              <li>fixed: 画面に固定される</li>
+              <li>scroll スクロールで動かない (初期値)</li>
+              <li>local スクロールで動く</li>
+              <li>fixed 画面に固定される</li>
             </ul>
           </div>
           <TextArea
